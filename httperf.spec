@@ -27,9 +27,15 @@ protocols, and its extensibility to new workload generators and
 performance measurements.
 
 %description -l pl
-Httperf jest narzêdziem mierz±cym wydajno¶æ serwera HTTP. Generuje
-wielow±tkowy ruch o okre¶lonej czêstotliwo¶ci i tworzy rozmaite
-raporty. Obs³uga protoko³ów HTTP/1.1 oraz SSL.
+Httperf jest narzêdziem mierz±cym wydajno¶æ serwera HTTP. Daje
+elastyczne mo¿liwo¶ci generowania ró¿nego rodzaju obci±¿enia HTTP i
+mierzenia wydajno¶ci serwera. Httperf nie skupia siê na implementacji
+jednego konkretnego testu wydajno¶ci, ale na zapewnieniu potê¿nego,
+wysoko wydajnego narzêdzia u³atwiaj±cego tworzenie testów wydajno¶ci w
+skali mikro i makro. Trzy cechy wyró¿niaj±ce httperf to moc, daj±ca
+mo¿liwo¶æ generowania i podtrzymywania obci±¿enia serwera, obs³uga
+protoko³ów HTTP/1.1 i SSL oraz rozszerzalno¶æ o nowe generatory i
+mierniki wydajno¶ci.
 
 %prep
 %setup -q
