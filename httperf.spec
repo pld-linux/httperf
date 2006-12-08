@@ -2,7 +2,7 @@ Summary:	httperf - a tool for measuring web server performance
 Summary(pl):	httperf - narzêdzie do mierzenia wydajno¶ci serwera HTTP
 Name:		httperf
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 URL:		http://www.hpl.hp.com/research/linux/httperf/
@@ -44,7 +44,7 @@ mierniki wydajno¶ci.
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -58,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO NEWS ChangeLog
-%attr(755,root,root) %{_bindir}
-%{_mandir}/man1
+%attr(755,root,root) %{_bindir}/httperf
+%{_mandir}/man1/httperf.1*
