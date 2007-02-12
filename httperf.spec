@@ -1,5 +1,5 @@
 Summary:	httperf - a tool for measuring web server performance
-Summary(pl):	httperf - narzêdzie do mierzenia wydajno¶ci serwera HTTP
+Summary(pl.UTF-8):   httperf - narzÄ™dzie do mierzenia wydajnoÅ›ci serwera HTTP
 Name:		httperf
 Version:	0.8
 Release:	2
@@ -26,16 +26,16 @@ and sustain server overload, support for the HTTP/1.1 and SSL
 protocols, and its extensibility to new workload generators and
 performance measurements.
 
-%description -l pl
-Httperf jest narzêdziem mierz±cym wydajno¶æ serwera HTTP. Daje
-elastyczne mo¿liwo¶ci generowania ró¿nego rodzaju obci±¿enia HTTP i
-mierzenia wydajno¶ci serwera. Httperf nie skupia siê na implementacji
-jednego konkretnego testu wydajno¶ci, ale na zapewnieniu potê¿nego,
-wysoko wydajnego narzêdzia u³atwiaj±cego tworzenie testów wydajno¶ci w
-skali mikro i makro. Trzy cechy wyró¿niaj±ce httperf to moc, daj±ca
-mo¿liwo¶æ generowania i podtrzymywania obci±¿enia serwera, obs³uga
-protoko³ów HTTP/1.1 i SSL oraz rozszerzalno¶æ o nowe generatory i
-mierniki wydajno¶ci.
+%description -l pl.UTF-8
+Httperf jest narzÄ™dziem mierzÄ…cym wydajnoÅ›Ä‡ serwera HTTP. Daje
+elastyczne moÅ¼liwoÅ›ci generowania rÃ³Å¼nego rodzaju obciÄ…Å¼enia HTTP i
+mierzenia wydajnoÅ›ci serwera. Httperf nie skupia siÄ™ na implementacji
+jednego konkretnego testu wydajnoÅ›ci, ale na zapewnieniu potÄ™Å¼nego,
+wysoko wydajnego narzÄ™dzia uÅ‚atwiajÄ…cego tworzenie testÃ³w wydajnoÅ›ci w
+skali mikro i makro. Trzy cechy wyrÃ³Å¼niajÄ…ce httperf to moc, dajÄ…ca
+moÅ¼liwoÅ›Ä‡ generowania i podtrzymywania obciÄ…Å¼enia serwera, obsÅ‚uga
+protokoÅ‚Ã³w HTTP/1.1 i SSL oraz rozszerzalnoÅ›Ä‡ o nowe generatory i
+mierniki wydajnoÅ›ci.
 
 %prep
 %setup -q
