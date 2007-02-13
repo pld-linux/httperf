@@ -1,5 +1,5 @@
 Summary:	httperf - a tool for measuring web server performance
-Summary(pl.UTF-8):   httperf - narzędzie do mierzenia wydajności serwera HTTP
+Summary(pl.UTF-8):	httperf - narzędzie do mierzenia wydajności serwera HTTP
 Name:		httperf
 Version:	0.8
 Release:	2
