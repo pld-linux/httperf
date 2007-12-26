@@ -1,13 +1,13 @@
 Summary:	httperf - a tool for measuring web server performance
 Summary(pl.UTF-8):	httperf - narzędzie do mierzenia wydajności serwera HTTP
 Name:		httperf
-Version:	0.8
-Release:	2
+Version:	0.9.0
+Release:	1
 License:	GPL
 Group:		Applications/Networking
 URL:		http://www.hpl.hp.com/research/linux/httperf/
 Source0:	ftp://ftp.hpl.hp.com/pub/httperf/%{name}-%{version}.tar.gz
-# Source0-md5:  2971956d4846349f9e8d3c54acd591a5
+# Source0-md5:	2968c36b9ecf3d98fc1f2c1c9c0d9341
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	openssl-devel
@@ -44,13 +44,12 @@ mierniki wydajności.
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure
-%{__make} -j1
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-install httperf $RPM_BUILD_ROOT%{_bindir}
-install httperf.man $RPM_BUILD_ROOT%{_mandir}/man1/httperf.1
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README TODO NEWS ChangeLog
+%attr(755,root,root) %{_bindir}/idleconn
 %attr(755,root,root) %{_bindir}/httperf
 %{_mandir}/man1/httperf.1*
