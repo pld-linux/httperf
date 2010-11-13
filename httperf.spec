@@ -2,7 +2,7 @@ Summary:	httperf - a tool for measuring web server performance
 Summary(pl.UTF-8):	httperf - narzędzie do mierzenia wydajności serwera HTTP
 Name:		httperf
 Version:	0.9.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Networking
 Source0:	ftp://ftp.hpl.hp.com/pub/httperf/%{name}-%{version}.tar.gz
