@@ -5,7 +5,7 @@ Version:	0.9.0
 Release:	3
 License:	GPL
 Group:		Applications/Networking
-Source0:	ftp://ftp.hpl.hp.com/pub/httperf/%{name}-%{version}.tar.gz
+Source0:	https://httperf.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	2968c36b9ecf3d98fc1f2c1c9c0d9341
 URL:		http://www.hpl.hp.com/research/linux/httperf/
 BuildRequires:	autoconf
