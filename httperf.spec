@@ -2,11 +2,12 @@ Summary:	httperf - a tool for measuring web server performance
 Summary(pl.UTF-8):	httperf - narzędzie do mierzenia wydajności serwera HTTP
 Name:		httperf
 Version:	0.9.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications/Networking
 Source0:	https://httperf.googlecode.com/files/%{name}-%{version}.tar.gz
 # Source0-md5:	2968c36b9ecf3d98fc1f2c1c9c0d9341
+Patch0:		%{name}-openssl-1.1.0.patch
 URL:		http://www.hpl.hp.com/research/linux/httperf/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -39,6 +40,7 @@ mierniki wydajności.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
